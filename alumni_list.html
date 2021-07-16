@@ -1,0 +1,878 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+
+Name       : Outstretched 
+Description: A two-column, fixed-width design with dark color scheme.
+Version    : 1.0
+Released   : 20210716
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Atmospheric Chemistry Modeling Group, Harvard University</title>
+		<meta name="keywords" content="" />
+		<meta name="description" content="" />
+		<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet" />
+		<link href="jacobgroup.css" rel="stylesheet" type="text/css" media="all" />
+		<link href="fonts.css" rel="stylesheet" type="text/css" media="all" />
+		<link href="leaflet/leaflet.css" rel="stylesheet" type="text/css" media="all">
+		<!--[if IE 6]>
+		<link href="default_ie6.css" rel="stylesheet" type="text/css" />
+		<![endif]-->
+
+		<!-- 
+		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+		%%%%%   SCRIPTS FOR INLINING HTML CODE (bmy, 3/28/14)            %%%%%
+		%%%%%                                                            %%%%%
+		%%%%%   The following scripts are used to inline HTML code       %%%%%
+		%%%%%   lists into Jacob-group pages.  This allows us to modify  %%%%%
+		%%%%%   content in the scripts instead of having to manually     %%%%%
+		%%%%%   edit all of the HTML pages on the site. (bmy, 3/28/14)   %%%%%
+		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+		-->
+		<script type="text/javascript" src="javascript/top_header.js"></script>
+		<script type="text/javascript" src="javascript/left_sidebar.js"></script>
+		<script type="text/javascript" src="javascript/related_sites.js"></script>
+		<script type="text/javascript" src="javascript/footer.js"></script>
+		<script type="text/javascript" src="leaflet/leaflet.js"></script>
+		<script type="text/javascript" src="leaflet/leaflet-color-markers.js"></script>
+	</head>
+	<body>
+
+		<!-- 
+		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+		%%%  PAGE WRAPPER BEGINS HERE             %%%
+		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+		--> 
+		<div id="wrapper">
+
+		<!-- 
+		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+		%%% TOP-OF-PAGE HEADER AND NAV MENU       %%%
+		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+		--> 
+			<script>showTopHeader();</script>
+
+		<!-- 
+		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+		%%% START OF PAGE CONTAINER SECTION       %%%
+		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+		--> 
+	<div id="page" class="container">
+  
+  		<!-- Mission statement -->
+		<div id="mission">
+			<!--Leave blank for spacing purposes -->
+ 		</div>
+
+		<!-- 
+		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+		%%% LEFT-HAND SIDEBAR SECTION             %%%
+		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+		-->   
+				<script>showLeftSidebar();</script>
+				
+		<!-- 
+		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+		%%% MAIN CONTENT PANEL                    %%%
+		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+		-->          
+     	 <div id="content_wide">
+						
+		<h2>GROUP ALUMNI MAP</h2>
+	 
+		<p>Click on a pin to see the name of an alumnus/alumna and follow the link to find out more information about that person. Use the zoom button on the map to resolve individual pins. See below for a complete list of alumni.</p>
+		<p>We invite you to also view:&nbsp; <a href="people.html">Current Group Members</a> | <a href="group_photos.html">Group Photos</a></strong></p>
+
+		<p align="center">Legend: <strong><span class="red">Ph.D.'s</span> | <span class="blue">Postdocs</span> |<span class="green">Undergraduates</span> | <span class="yellow">Visitors</span> | <span class="black">Staff</span></strong></p>
+
+		<div id="mapid" style="width:600px; height:400px; margin:auto;"></div>
+		<script>
+
+		  var mymap = L.map('mapid', {
+		    center: [20, 15],
+		    zoom: 1,
+		    closePopupOnClick: true,
+		  });
+	  
+		  L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/streets-v10/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoibXN1bHByaXppbyIsImEiOiJjaXppc2ZoMm8wMWM2MndvZDh4ZW9kajdmIn0.OaaEoGU3JhNuY_ysmvmn4g', {
+		    maxZoom: 18,
+		    attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
+		    '<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+		    'Imagery © <a href="http://mapbox.com">Mapbox</a>',
+		    id: 'mapbox.streets'
+		  }).addTo(mymap);
+
+                  L.marker([  41.788632,  -87.598756 ],{icon:greenIcon}).addTo(mymap).bindPopup("<a href='#Abbot'>Dorian Abbot</a>");
+                  L.marker([  47.609070, -122.336845 ],{icon:redIcon}).addTo(mymap).bindPopup("<a href='#Achakulwisut'>Ploy Achakulwisut</a>");
+                  L.marker([  42.462507,  -71.267933 ],{icon:blueIcon}).addTo(mymap).bindPopup("<a href='#Alvarado'>Matthew Alvarado</a>");
+                  L.marker([  38.893818,  -77.028950 ],{icon:redIcon}).addTo(mymap).bindPopup("<a href='#Amos'>Helen Amos</a>");
+                  L.marker([  48.708863,    2.148158 ],{icon:redIcon}).addTo(mymap).bindPopup("<a href='#Balkanski'>Yves Balkanski</a>");
+                  L.marker([  46.223335,    6.146485 ],{icon:blueIcon}).addTo(mymap).bindPopup("<a href='#Bey'>Isabelle Bey</a>");
+                  L.marker([  42.367136,  -71.080176 ],{icon:blueIcon}).addTo(mymap).bindPopup("<a href='#Breider'>Thomas Breider</a>");
+                  L.marker([  37.689066, -121.717038 ],{icon:blueIcon}).addTo(mymap).bindPopup("<a href='#Cameron-Smith'>Philip Cameron-Smith</a>");
+                  L.marker([ -33.917329,  151.231267 ],{icon:blackIcon}).addTo(mymap).bindPopup("<a href='#Carouge'>Claire Carouge</a>");
+                  L.marker([  29.717413,  -95.401820 ],{icon:greenIcon}).addTo(mymap).bindPopup("<a href='#Cohan'>Daniel Cohan</a>");
+                  L.marker([  30.450871,  -91.145076 ],{icon:redIcon}).addTo(mymap).bindPopup("<a href='#Corbitt'>Elizabeth Corbitt</a>");
+                  L.marker([  42.356735,   13.382851 ],{icon:yellowIcon}).addTo(mymap).bindPopup("<a href='#Curci'>Gabriele Curci</a>");
+                  L.marker([  34.201326, -118.171394 ],{icon:redIcon}).addTo(mymap).bindPopup("<a href='#Cusworth'>Daniel Cusworth</a>");
+                  L.marker([  40.441096,   -3.686205 ],{icon:yellowIcon}).addTo(mymap).bindPopup("<a href='#Dachs'>Jordi Dachs</a>");
+                  L.marker([  39.751354, -104.993428 ],{icon:redIcon}).addTo(mymap).bindPopup("<a href='#Drury'>Easan Drury</a>");
+                  L.marker([  53.945546,   -1.056167 ],{icon:blueIcon}).addTo(mymap).bindPopup("<a href='#Evans'>Mat Evans</a>");
+                  L.marker([  41.049554,  -74.049624 ],{icon:blackIcon}).addTo(mymap).bindPopup("<a href='#Fields'>Brendan Field</a>");
+                  L.marker([  41.003927,  -73.908807 ],{icon:redIcon}).addTo(mymap).bindPopup("<a href='#Fiore'>Arlene Fiore</a>");  
+                  L.marker([  40.569094, -105.079258 ],{icon:blueIcon}).addTo(mymap).bindPopup("<a href='#Fischer'>Emily Fischer</a>");
+                  L.marker([ -34.405416,  150.879967 ],{icon:redIcon}).addTo(mymap).bindPopup("<a href='#Fisher'>Jenny Fisher</a>");
+                  L.marker([  30.441863,  -84.298512 ],{icon:redIcon}).addTo(mymap).bindPopup("<a href='#Holmes'>Christopher Holmes</a>");
+                  L.marker([  40.102527,  -88.227526 ],{icon:redIcon}).addTo(mymap).bindPopup("<a href='#HHorowitz'>Hannah Horowitz</a>");
+                  L.marker([  40.345410,  -74.616210 ],{icon:redIcon}).addTo(mymap).bindPopup("<a href='#LHorowitz'>Larry Horowitz</a>");
+                  L.marker([  46.860075, -113.985262 ],{icon:blueIcon}).addTo(mymap).bindPopup("<a href='#Hu'>Lu Hu</a>");
+                  L.marker([  37.783180, -122.397084 ],{icon:redIcon}).addTo(mymap).bindPopup("<a href='#Hudman'>Rynda Hudman Kay</a>");
+                  L.marker([  39.719938, -105.120142 ],{icon:greenIcon}).addTo(mymap).bindPopup("<a href='#Hsu'>Leslie Hsu</a>");
+                  L.marker([ -33.441119,  -70.640815 ],{icon:yellowIcon}).addTo(mymap).bindPopup("<a href='#Jorquera'>Hector Jorquera</a>");
+                  L.marker([  34.058278, -118.414643 ],{icon:redIcon}).addTo(mymap).bindPopup("<a href='#Kim'>Patrick Kim</a>");
+                  L.marker([  35.882159,  -78.873714 ],{icon:redIcon}).addTo(mymap).bindPopup("<a href='#Koplitz'>Shannon Koplitz</a>");
+                  L.marker([  42.423978,  -76.493628 ],{icon:redIcon}).addTo(mymap).bindPopup("<a href='#Leibensperger'>Eric Leibensperger</a>");
+                  L.marker([  46.731937, -117.154276 ],{icon:blueIcon}).addTo(mymap).bindPopup("<a href='#Leung'>Fok-Yan Leung</a>");
+                  L.marker([  34.068930, -118.445278 ],{icon:redIcon}).addTo(mymap).bindPopup("<a href='#Li'>Qinbin Li</a>");
+                  L.marker([  38.411572, -121.389679 ],{icon:redIcon}).addTo(mymap).bindPopup("<a href='#Liang'>Jinyou Liang</a>");
+                  L.marker([  42.377996,  -71.115964 ],{icon:blueIcon}).addTo(mymap).bindPopup("<a href='#Liy'>Yang Li</a>");
+                  L.marker([  42.453291,  -76.473535 ],{icon:greenIcon}).addTo(mymap).bindPopup("<a href='#CLin'>Cynthia Lin</a>")
+                  L.marker([  34.225726,  -77.944710 ],{icon:blueIcon}).addTo(mymap).bindPopup("<a href='#Long'>Mike Long</a>");  
+                  L.marker([  52.088086,    5.164166 ],{icon:redIcon}).addTo(mymap).bindPopup("<a href='#Maasakkers'>J.D. (Bram) Maasakkers</a>");  
+                  L.marker([  64.857556, -147.836504 ],{icon:blueIcon}).addTo(mymap).bindPopup("<a href='#Mao'>Jingqiu Mao</a>");
+                  L.marker([  50.583080,    5.559064 ],{icon:yellowIcon}).addTo(mymap).bindPopup("<a href='#Mahieu'>Emanuel Mahieu</a>");
+                  L.marker([  51.524466,   -0.133890 ],{icon:redIcon}).addTo(mymap).bindPopup("<a href='#Marais'>Eloise Marais</a>");
+                  L.marker([  38.648756,  -90.310775 ],{icon:redIcon}).addTo(mymap).bindPopup("<a href='#Martin'>Randall Martin</a>");
+                  L.marker([  44.986594,  -93.183195 ],{icon:blueIcon}).addTo(mymap).bindPopup("<a href='#Millet'>Dylan Millet</a>");
+                  L.marker([  43.130537,  -77.626057 ],{icon:redIcon}).addTo(mymap).bindPopup("<a href='#Murray' >Lee Murray</a>");
+                  L.marker([  29.760630,  -95.366478 ],{icon:blackIcon}).addTo(mymap).bindPopup("<a href='#Murti'>Prashant Murti");
+                  L.marker([  43.781506,  -79.468555 ],{icon:blueIcon}).addTo(mymap).bindPopup("<a href='#Nassar'>Ray Nassar</a>");
+                  L.marker([  55.944534,   -3.189327 ],{icon:blueIcon}).addTo(mymap).bindPopup("<a href='#Palmer'>Paul Palmer</a>");
+                  L.marker([  37.459899,  126.951884 ],{icon:blueIcon}).addTo(mymap).bindPopup("<a href='#Park'>Rokjin Park</a>");
+                  L.marker([  40.730453,  -73.991452 ],{icon:redIcon}).addTo(mymap).bindPopup("<a href='#Parrella'>Justin Parrella</a>");
+                  L.marker([ -35.282129,  149.124681 ],{icon:blueIcon}).addTo(mymap).bindPopup("<a href='#Pickett-Heaps'>Christopher Pickett-Heaps</a>");
+                  L.marker([  47.887875,    1.883942 ],{icon:blueIcon}).addTo(mymap).bindPopup("<a href='#Poisson'>Nathalie Poisson</a>");
+                  L.marker([  17.594663,   78.123297 ],{icon:blueIcon}).addTo(mymap).bindPopup("<a href='#Qureshi'>Asif Qureshi</a>");
+                  L.marker([  36.076106,  -79.770913 ],{icon:blueIcon}).addTo(mymap).bindPopup("<a href='#Rastigejev'>Yevgenii Rastigejev</a>");
+                  L.marker([  48.854027,    2.328341 ],{icon:blueIcon}).addTo(mymap).bindPopup("<a href='#Ravetta'>Francois Ravetta</a>");
+                  L.marker([ -41.301838,  174.805098 ],{icon:yellowIcon}).addTo(mymap).bindPopup("<a href='#Riedel'>Katja Riedel</a>");
+                  L.marker([  48.799613,    2.141543 ],{icon:yellowIcon}).addTo(mymap).bindPopup("<a href='#Saunois'>Marielle Saunois</a>");		  
+                  L.marker([  55.680242,   12.572345 ],{icon:blueIcon}).addTo(mymap).bindPopup("<a href='#Schmidt'>Johan Schmidt</a>");
+                  L.marker([  50.944481,    6.382359 ],{icon:blueIcon}).addTo(mymap).bindPopup("<a href='#Schultz'>Martin Schultz</a>");
+                  L.marker([  38.892956,  -77.047748 ],{icon:redIcon}).addTo(mymap).bindPopup("<a href='#Silvern'>Rachel Silvern</a>");
+                  L.marker([  30.300349,  -97.765809 ],{icon:blueIcon}).addTo(mymap).bindPopup("<a href='#Smith-Downey'>Nicole Smith-Downey</a>");
+                  L.marker([  59.362776,   18.059171 ],{icon:blueIcon}).addTo(mymap).bindPopup("<a href='#Soerensen'>Anne Soerensen</a>");
+                  L.marker([  37.803546, -122.274958 ],{icon:blackIcon}).addTo(mymap).bindPopup("<a href='#Spiro'>Peter Spiro</a>");
+                  L.marker([  53.806726,   -1.555880 ],{icon:blueIcon}).addTo(mymap).bindPopup("<a href='#Sptacklen'>Dominick Spracklen</a>");
+                  L.marker([  38.896663,  -77.019178 ],{icon:redIcon}).addTo(mymap).bindPopup("<a href='#Staudt'>Amanda Staudt</a>");
+                  L.marker([  52.621798,    1.239080 ],{icon:blackIcon}).addTo(mymap).bindPopup("<a href='#Suntharalingam'>Parvadha Suntharalingam</a>");
+                  L.marker([  22.416462,  114.210900 ],{icon:redIcon}).addTo(mymap).bindPopup("<a href='#Tai'>Amos Tai</a>");
+                  L.marker([  36.050079,  140.119488 ],{icon:yellowIcon}).addTo(mymap).bindPopup("<a href='#Tanimoto'>Hiroshi Tanimoto</a>");
+                  L.marker([  48.847089,    2.357467 ],{icon:blueIcon}).addTo(mymap).bindPopup("<a href='#Turquety'>Solene Turquety</a>");
+                  L.marker([  50.736594,   -3.535405 ],{icon:blueIcon}).addTo(mymap).bindPopup("<a href='#Unger'>Nadine Unger</a>"); 
+                  L.marker([  53.380800,   -1.488011 ],{icon:blueIcon}).addTo(mymap).bindPopup("<a href='#ValMartin'>Maria Val Martin</a>");
+                  L.marker([  49.807515,  -97.136712 ],{icon:yellowIcon}).addTo(mymap).bindPopup("<a href='#FWang'>Feiyue Wang</a>");
+                  L.marker([  41.662744,  -91.554889 ],{icon:blueIcon}).addTo(mymap).bindPopup("<a href='#JunWang'>Jun Wang</a>");
+                  L.marker([  23.135454,  113.258011 ],{icon:redIcon}).addTo(mymap).bindPopup("<a href='#QWang'>Qiaoqiao Wang</a>");
+                  L.marker([  22.336917,  114.172402 ],{icon:blueIcon}).addTo(mymap).bindPopup("<a href='#XWang'>Xuan Wang</a>");
+                  L.marker([  29.723513,  -95.346421 ],{icon:redIcon}).addTo(mymap).bindPopup("<a href='#YuxuanWang'>Yuxuan Wang</a>");
+                  L.marker([  33.917788, -118.395234 ],{icon:redIcon}).addTo(mymap).bindPopup("<a href='#Wecht'>Kevin Wecht</a>");
+                  L.marker([  47.117242,  -88.542554 ],{icon:redIcon}).addTo(mymap).bindPopup("<a href='#Wu'>Shiliang Wu</a>");
+                  L.marker([  42.416209,  -71.127646 ],{icon:redIcon}).addTo(mymap).bindPopup("<a href='#Xiao'>Yaping Xiao</a>");
+                  L.marker([  37.776554, -122.391981 ],{icon:redIcon}).addTo(mymap).bindPopup("<a href='#Yu'>Karen Yu</a>"); 
+                  L.marker([  32.205419,  118.726967 ],{icon:blueIcon}).addTo(mymap).bindPopup("<a href='#Yue'>Xu Yue</a>"); 
+                  L.marker([  32.056939,  118.778686 ],{icon:blueIcon}).addTo(mymap).bindPopup("<a href='#YZhang'>Yanxu Zhang</a>");
+                  L.marker([  30.133957,  120.079467 ],{icon:blueIcon}).addTo(mymap).bindPopup("<a href='#YuZhang'>Yuzhong Zhang</a>");
+
+                  <!-- INSTITUTIONS WITH SEVERAL ALUMNI -->
+                  <!-- Harvard Smithsonian Center for Astrophysics -->
+                  L.marker([  42.381437,  -71.128097 ],{icon:redIcon}).addTo(mymap).bindPopup("<a href='#ChanMiller'>Christopher Chan Miller</a><br><a href='#HWang'>Huiqun (Helen) Wang</a>");
+                  <!-- Harvard University -->
+                  L.marker([  42.377986,  -71.117046 ],{icon:blackIcon}).addTo(mymap).bindPopup("<a href='#Santillana'>Mauricio Santillana</a><br><a href='#Sunderland'>Elsie Sunderland</a><br><a href='#Zoogman'>Peter Zoogman</a>");
+                  <!-- Laboratoire d'Aerologie, Toulouse, France -->
+                  L.marker([  43.562799,    1.480482 ],{icon:blueIcon}).addTo(mymap).bindPopup("<a href='#Leriche'>Maud Leriche</a><br><a href='#Mari'>Celine Mari</a><br><a href='#Thouret'>Valerie Thouret</a>");  
+                  <!-- KNMI -->
+                  L.marker([  52.101222,    5.178165 ],{icon:blueIcon}).addTo(mymap).bindPopup("<a href='#Boersma'>Folkert Boersma</a><br><a href='#LeSager'>Philippe Le Sager</a>");
+                  <!-- MIT -->
+                  L.marker([  42.360217,  -71.098403 ],{icon:redIcon}).addTo(mymap).bindPopup("<a href='#Heald'>Colette Heald</a><br><a href='#Selin'>Noelle Eckley Selin</a><br><br><a href='#Eastham'>Sebastian Eastham</a><br><a href='#Sheng'>Jian-Xiong Sheng</a>");
+                  <!-- NASA GMAO -->
+                  L.marker([  38.992999,  -76.853639 ],{icon:blueIcon}).addTo(mymap).bindPopup("<a href='#Chin'>Mian Chin</a><br><a href='#Duncan'>Bryan Duncan</a><br><a href='#Keller'>Christoph Keller</a><br><a href='#JLiu'>Junhua Liu</a>");          
+                  <!-- NASA Langley Research Center -->
+                  L.marker([  37.095825,  -76.385453 ],{icon:redIcon}).addTo(mymap).bindPopup("<a href='#Fairlie'>T. Duncan Fairlie</a><br><a href='#HLiu'>Hongyu Liu</a><a href='#Travis'>Katherine Travis</a>");		  
+                  <!-- NOAA Silver Springs Offices -->
+                  L.marker([  38.991807,  -77.029933 ],{icon:redIcon}).addTo(mymap).bindPopup("<a href='#Kopacz'>Monika Kopacz</a><br><a href='#JamesWang'>James Wang</a>");
+                  <!-- Peking University -->
+                  L.marker([  39.986929,  116.305863 ],{icon:redIcon}).addTo(mymap).bindPopup("<a href='#JLin'>Jintai Lin</a><br><a href='#LZhang'>Lin Zhang</a>");  
+                  <!-- Princeton University -->
+                  L.marker([  40.344020,  -74.651488 ],{icon:redIcon}).addTo(mymap).bindPopup("<a href='#Mauzerall'>Denise Mauzerall</a><br><a href='#Paulot'>Fabien Paulot</a>");
+                  <!-- University of Washington -->
+                  L.marker([  47.654087, -122.309067 ],{icon:blueIcon}).addTo(mymap).bindPopup("<a href='#Alexander'>Becky Alexander</a><br><a href='#Jaegle'>Lyatt Jaegl&eacute;</a><br><a href='#Turner'>Alexander Turner</a>");
+		  <!-- Univertity of Toronto -->
+		  L.marker([  43.661187,  -79.397687 ],{icon:blackIcon}).addTo(mymap).bindPopup("<a href='#Jones'>Dylan Jones</a><br><a href='#Ellis'>Raluca Ellis</a>");
+		  <!-- Georgia Tech -->
+                  L.marker([  33.778766,  -84.396053 ],{icon:redIcon}).addTo(mymap).bindPopup("<a href='#YuhangWang'>Yuhang Wang</a><br><a href='#Kaiser'>Jennifer Kaiser</a><br><a href='#PLiu'>Pengfei Liu</a>");
+		  <!--- SUSTech --->
+                  L.marker([  22.594018,  113.998929 ],{icon:redIcon}).addTo(mymap).bindPopup("<a href='#Fu'>Tzung-May Fu</a><br><a href='#Zhu'>Lei Zhu</a>");
+		    
+                  var popup = L.popup();
+
+                  mymap.on('click', onMapClick);
+
+                </script>	
+			
+                <hr />
+			
+		<h2>GROUP ALUMNI LIST</h2>
+
+			
+		   <table width="780" border="0" cellspacing="0" cellpadding="6" valign="top">
+			<tr>
+		    	<td width="200" valign="top"><a name="Abbot"></a><a href="https://geosci.uchicago.edu/people/dorian-abbot/" target="_blank">ABBOT, Dorian S.</a></td>
+			<td width="225" valign="top">Undergraduate Research <br />Assistant, 2002-2004</td>
+	    		<td width="355" valign="top">Associate Professor,<br />University of Chicago</td>
+		  	</tr>
+			<tr>
+		    	<td width="200" valign="top"><a name="Achakulwisut"></a><a href="https://www.sei.org/people/ploy-achakulwisut/">ACHAKULWISUT, Ploy</a></td>
+			<td width="225" valign="top">Ph.D. 2017</td>
+	    		<td width="355" valign="top">Staff Scientist,<br />Stockholm Environment Institute</td>
+		  	</tr>
+			<tr>
+		    	<td valign="top"><a name="Alexander"></a><a href="http://www.atmos.washington.edu/blog/beckya/becky-alexander/" target="_blank">ALEXANDER, Becky</a></td>
+			<td valign="top">Postdoctoral Fellow,<br />2003-2005</td>
+	    		<td valign="top">Professor,<br />University of Washington</td>
+		  	</tr>
+			<tr>
+		    	<td valign="top"><a name="Alvarado"></a><a href="https://www.aer.com/news-events/resource-library/authors/matthew-j-alvarado/" target="_blank">ALVARADO, Matthew</a></td>
+			<td valign="top">Postdoctoral Fellow,<br />2008-2010</td>
+	    		<td valign="top">Research Scientist<br />Atmospheric and Environmental Research, Inc.</td>
+		  	</tr>
+			<tr>
+		    	<td valign="top"><a name="Amos"></a><a href="https://science.gsfc.nasa.gov/sed/bio/helen.m.amos">AMOS, Helen M.</a></td>
+			<td valign="top">Ph.D. 2014</td>
+	    		<td valign="top">Senior Research Scientist,<br />NASA Goddard Space Flight Center</td>
+		  	</tr>
+			<tr>
+		    	<td valign="top"><a name="Balkanski"></a><a href="http://www.lsce.ipsl.fr/Pisp/yves.balkanski/" target="_blank">BALKANSKI, Yves J.</a></td>
+			<td valign="top">Ph.D. 1991</td>
+	    		<td valign="top">Senior Researcher,<br />Laboratoire des Sciences du Climat et de l'Environnement,<br />Commissariat a l'Energie Atomique, France</td>
+		  	</tr>
+			<tr>
+		    	<td valign="top"><a name="Bey"></a><a href="http://4dweb.proclim.ch/4dcgi/proclim/all/Detail_Person?135445" target="_blank">BEY, Isabelle</a></td>
+			<td valign="top">Postdoctoral Fellow and<br />Research Associate,<br />1997-2001</td>
+	    		<td valign="top">Head,<br />Regional Center West, MeteoSwiss, Geneva</td>
+		  	</tr>
+			<tr>
+		    	<td valign="top"><a name="Boersma"></a><a href="https://www.knmi.nl/over-het-knmi/onze-mensen/folkert-boersma" target="_blank">BOERSMA, K. Folkert</a></td>
+			<td valign="top">Postdoctoral Fellow,<br />2005-2007</td>
+	    		<td valign="top">Research Scientist,<br />KNMI, Netherlands</td>
+		  	</tr>
+			<tr>
+		    	<td valign="top"><a name="Breider"></a><a href="https://www.linkedin.com/in/tom-breider-4b987340/" target="_blank">BREIDER, Thomas J.</a></td>
+			<td valign="top">Postdoctoral Fellow and Research Associate,<br />2011-2016</td>
+	    		<td valign="top">Senior Data Analyst,<br />The Reputation Institute, Cambridge, MA</td>
+		  	</tr>
+			<tr>
+		    	<td valign="top"><a name="Cameron-Smith"></a><a href="https://people.llnl.gov/cameronsmith1">CAMERON-SMITH, Philip J.</a></td>
+			<td valign="top">Postdoctoral Fellow,<br />1998-2000</td>
+	    		<td valign="top">Group Leader,<br />Climate Modeling and Analysis,<br />Lawrence Livermore National Laboratory</td>
+		  	</tr>
+			<tr>
+		    	<td valign="top"><a name="Carouge"></a><a href="http://rses.anu.edu.au/research/ep/ep-staff.php" target="_blank">CAROUGE, Claire C.</a></td>
+			<td valign="top">Research Associate,<br />2009-2011</td>
+	    		<td valign="top">Academic Staff,<br />University of New South Wales</td>
+		  	</tr>
+			<tr>
+		    	<td valign="top"><a name="ChanMiller"></a><a href="https://scholar.harvard.edu/chanmiller/home" target="_blank">CHAN MILLER, Christopher</a></td>
+			<td valign="top">Ph.D. 2016</td>
+	    		<td valign="top">Research Scientist,<br />Smithsonian Astrophysical Observatory<br />
+		  	</tr>
+			<tr>
+		    	<td valign="top"><a name="Chin"></a><a href="http://acdb-ext.gsfc.nasa.gov/People/Chin/" target="_blank">CHIN, Mian</a></td>
+			<td valign="top">Postdoctoral Fellow,<br />1992-1994</td>
+	    		<td valign="top">Physical Scientist,<br />Laboratory for Atmospheres,<br />NASA Goddard Space Flight Center</td>
+		  	</tr>
+			<tr>
+		    	<td valign="top"><a name="Cohan"></a><a href="http://cohan.rice.edu/" target="_blank">COHAN, Daniel S.</a></td>
+			<td valign="top">Undergraduate Research<br />Assistant, 1995-1998</td>
+                        <td valign="top">Associate Professor of Environmental Engineering,<br />Rice University</td>
+		  	</tr>
+			<tr>
+		    	<td valign="top"><a name="Corbitt"></a><a href="https://www.facebook.com/thestaway/?ref=page_internal">CORBITT, Elizabeth D.</a></td>
+			<td valign="top">Ph.D. Student,<br />2008-2014</td>
+	    		<td valign="top">Environmental Science Teacher,<br /><St. Amant High School,<br />Louisiana</td>
+		  	</tr>
+			<tr>
+		    	<td valign="top"><a name="Curci"></a><a href="http://pumpkin.aquila.infn.it/gabri/" target="_blank">CURCI, Gabriele</a></td>
+			<td valign="top">Visiting Graduate Student,<br />2001</td>
+	    		<td valign="top">Assistant Professor,<br />University of L'Aquila, Italy</td>
+		  	</tr>
+			<tr>
+		    	<td valign="top"><a name="Cusworth"></a><a href="http://www.dancusworth.com" target="_blank">CUSWORTH, Daniel H.</a></td>
+			<td valign="top">Ph.D. 2018</td>
+                        <td valign="top">Postdoctoral Fellow,<br />JPL</td>
+		  	</tr>
+			<tr>
+		    	<td valign="top"><a name="Dachs"></a><a href="http://www.idaea.csic.es/" target="_blank">DACHS, Jordi</a></td>
+			<td valign="top">Visiting Scientist,<br />2005</td>
+	    		<td valign="top">Research Scientist,<br />CSIC, Barcelona</td>
+		  	</tr>
+			<tr>
+		    	<td valign="top"><a name="Drury"></a><a href="https://www.linkedin.com/in/easandrury/" target="_blank">DRURY, Easan E.</a></td>
+			<td valign="top">Ph.D. 2009</td>
+	    		<td valign="top">Technology Solutions Manager<br />McKinstry, Denver</td>
+		  	</tr>
+			<tr>
+		    	<td valign="top"><a name="Duncan"></a><a href="https://acd-ext.gsfc.nasa.gov/People/Duncan/" target="_blank">DUNCAN, Bryan N.</a></td>
+			<td valign="top">Postdoctoral Fellow and<br />Research Associate,<br />1997-2001</td>
+	    		<td valign="top">Senior Research Scientist,<br />NASA/Goddard Space Flight Center</td>
+		  	</tr>
+			<tr>
+		    	<td valign="top"><a name="Eastham"></a><a href="https://lae.mit.edu/team/sebastian-eastham/" target="_blank">EASTHAM, Sebastian D.</a></td>
+			<td valign="top">Postdoctoral Fellow,<br />2016-2017</td>
+	    		<td valign="top">Research Scientist,<br />MIT</td>
+		  	</tr>
+			<tr>
+		    	<td valign="top"><a name="Ellis"></a><a href="https://twitter.com/ralucaellis?lang=en" target="_blank">ELLIS, Raluca A.</a></td>
+			<td valign="top">Postdoctoral Fellow,<br />2011-2013</td>
+	    		<td valign="top">Director of Strategic Relations,<br />SOCAAR and C4M, University of Toronto</td>
+		  	</tr>
+			<tr>
+		    	<td valign="top"><a name="Evans"></a><a href="http://www.york.ac.uk/chemistry/staff/academic/d-g/evansm/" target="_blank">EVANS, Mathew J.</a></td>
+			<td valign="top">Postdoctoral Fellow,<br />2001-2003</td>
+	    		<td valign="top">Professor,<br />University of York, UK</td>
+		  	</tr>
+			<tr>
+		    	<td valign="top"><a name="Fairlie"></a><a href="http://airbornescience.nasa.gov/person/Thomas_Duncan_Fairlie" target="_blank">FAIRLIE, T. Duncan</a></td>
+			<td valign="top">Ph.D. 2009</td>
+	    		<td valign="top">Research Scientist,<br />NASA Langley Research Center</td>
+		  	</tr>
+			<tr>
+		    	<td valign="top"><a name="Field"></a><a href="https://hills.pascack.org/" target="_blank">FIELD, Brendan D.</a></td>
+			<td valign="top">Scientific Programmer,<br />1999-2003</td>
+	    		<td valign="top">Teacher,<br />Pascack Hills High School, NJ</td>
+		  	</tr>
+			<tr>
+		    	<td valign="top"><a name="Fiore"></a><a href="http://www.ldeo.columbia.edu/~amfiore/" target="_blank">FIORE, Arlene</a></td>
+			<td valign="top">Ph.D. 2003</td>
+	    		<td valign="top">Professor,<br />Columbia University<br />Lamont-Doherty Earth Observatory</td>
+		  	</tr>
+			<tr>
+		    	<td valign="top"><a name="Fischer"></a><a href="http://www.atmos.colostate.edu/faculty/fischer.php" target="_blank">FISCHER, Emily</a></td>
+			<td valign="top">Postdoctoral Fellow,<br />2011-2013</td>
+	    		<td valign="top">Associate Professor,<br />Colorado State University</td>
+		  	</tr>
+			<tr>
+		    	<td valign="top"><a name="Fisher"></a><a href="https://jennyfisher.github.io/" target="_blank">FISHER, Jenny</a></td>
+			<td valign="top">Ph.D. 2011</td>
+	    		<td valign="top">Associate Professor,<br />University of Wollongong, Australia</td>
+		  	</tr>
+			<tr>
+		    	<td valign="top"><a name="Fowler"></a><a href="https://www.linkedin.com/in/mfenergy/">FOWLER, Michael</a></td>
+			<td valign="top">Scientific Programmer, 1994-1995</td>
+	    		<td valign="top">Director<br />Clean Air Task Force, Boston</td>
+		  	</tr>
+			<tr>
+		    	<td valign="top"><a name="Fu"></a><a href="https://fugroup.org/index.php/Tzung-May_FU" target="_blank">FU, Tzung-May</a></td>
+			<td valign="top">Ph.D. 2007</td>
+	    		<td valign="top">Professor,<br />Southern University of Science and Technology (SUSTech)</td>
+		  	</tr>
+			<tr>
+		    	<td valign="top"><a name="Gardner"></a><a href="http://acmg.seas.harvard.edu/memoriam.html" target="_blank">GARDNER, Gerry M.</a></td>
+			    <td valign="top">Scientific Programmer,<br />1989-1997</td>
+	    		<td valign="top">Deceased</td>
+		  	</tr>
+			<tr>
+		    	<td valign="top"><a name="Heald"></a><a href="http://cee.mit.edu/heald" target="_blank">HEALD, Colette L.</a></td>
+			<td valign="top">Ph.D. 2005</td>
+	    		<td valign="top">Professor,<br />Massachusetts Institute of Technology</td>
+		  	</tr>
+			<tr>
+		    	<td valign="top"><a name="Holmes"></a><a href="https://acgc.eoas.fsu.edu/people/christopher-d-holmes/" target="_blank">HOLMES, Christopher D.</a></td>
+			<td valign="top">Ph.D. 2009</td>
+	    		<td valign="top">Associate Professor,<br />Florida State University</td>
+		  	</tr>
+			<tr>
+		    	<td valign="top"><a name="HHorowitz"></a><a href="https://cee.illinois.edu/directory/profile/hmhorow"
+target="_blank">HOROWITZ, Hannah M.</a></td>
+			<td valign="top">Ph.D. 2016</td>
+	    		<td valign="top">Assistant Professor,<br />University of Illinois</td>
+		  	</tr>
+  			<tr>
+		    	<td valign="top"><a name="LHorowitz"></a><a href="http://www.gfdl.noaa.gov/larry-horowitz-homepage" target="_blank">HOROWITZ, Larry W.</a></td>
+			<td valign="top">Ph.D. 1997</td>
+	    		<td valign="top">Physical Scientist,<br />NOAA Geophysical Fluid Dynamics Laboratory</td>
+		  	</tr>
+			<tr>
+		    	<td valign="top"><a name="Hsu"></a><a href="https://sites.google.com/site/lhsu000001/" target="_blank">HSU, Leslie</a></td>
+			<td valign="top">B.S. 2000</td>
+	    		<td valign="top">Physical Scientist,<br />USGS, Denver</td>
+		  	</tr>
+			<tr>
+		    	<td valign="top"><a name="Hu"></a><a href="http://hs.umt.edu/luhu/" target="_blank">HU, Lu</a></td>
+			<td valign="top">Postdoctoral Fellow, 2014-2016</td>
+	    		<td valign="top">Assistant Professor,<br />University of Montana</td>
+		  	</tr>
+			<tr>
+		    	<td valign="top"><a name="Hudman"></a><a href="http://www.atmos.berkeley.edu/~hudman/" target="_blank">HUDMAN KAY, Rynda C.</a></td>
+			<td valign="top">Ph.D. 2007,<br />Postdoctoral Fellow,<br />2007-2008</td>
+	    		<td valign="top">Environmental Scientist,<br />EPA Region IX, San Francisco</td>
+		  	</tr>
+			<tr>
+		    	<td valign="top"><a name="Jaegle"></a><a href="https://sites.uw.edu/jaegle/lyatt-jaegle/" target="_blank">JAEGL&Eacute;, Lyatt</a></td>
+			<td valign="top">Postdoctoral Fellow and<br />Research Associate,<br />1996-2000</td>
+	    		<td valign="top">Professor,<br />Dept. of Atmospheric Sciences,<br />University of Washington</td>
+		  	</tr>
+			<tr>
+		    	<td valign="top"><a name="Jones"></a><a href="https://en.wikipedia.org/wiki/Dylan_Jones_(physicist)" target="_blank">JONES, Dylan B.A.</a></td>
+			<td valign="top">Research Associate,<br />2001-2004</td>
+	    		<td valign="top">Professor,<br />Dept. of Physics,<br />University of Toronto</td>
+		  	</tr>
+			<tr>
+		    	<td valign="top"><a name="Jorquera"></a><a href="http://www.ing.puc.cl/cuerpo-docente/jorquera-hector/" target="_blank">JORQUERA, Hector</a></td>
+			<td valign="top">Visiting Scientist,<br />2006-2007</td>
+	    		<td valign="top">Professor of Chemical Engineering,<br />Catholic University of Chile, Santiago</td>
+		  	</tr>
+			<tr>
+		    	<td valign="top"><a name="Kaiser"></a><a href="https://kaisergroup.ce.gatech.edu/" target="_blank">KAISER, Jennifer B.</a></td>
+			<td valign="top">Postdoctoral Fellow, 2016-2018</td>
+	    		<td valign="top">Assistant Professor,<br /> Georgia Tech</td>
+		  	</tr>
+			<tr>
+		    	<td valign="top"><a name="Keller"></a><a href="https://science.gsfc.nasa.gov/sed/bio/christoph.a.keller" target="_blank">KELLER, Christoph A.</a></td>
+			<td valign="top">Postdoctoral Fellow, 2012-2015</td>
+	    		<td valign="top">Scientist,<br /> NASA-Goddard Space Flight Center, Beltville, Maryland</td>
+		  	</tr>
+			<tr>
+		    	<td valign="top"><a name="Kim"></a><a href="https://www.linkedin.com/in/sungshikkim/" target="_blank">KIM, Patrick S.</a></td>
+			<td valign="top">Ph.D. 2015</td>
+	    		<td valign="top">Engagement Manager,<br /> Transom Consulting Group, Los Angeles</td>
+		  	</tr>
+			<tr>
+		    	<td valign="top"><a name="Kopacz"></a><a href="http://cpo.noaa.gov/Contact" target="_blank">KOPACZ, Monika</a></td>
+			<td valign="top">Ph.D. 2009</td>
+	    		<td valign="top">Program Manager,<br />NOAA Climate Program Office</td>
+		  	</tr>
+			<tr>
+		    	<td valign="top"><a name="Koplitz"></a><a href="https://www3.epa.gov/airquality/modeling.html" target="_blank">KOPLITZ, Shannon</a></td>
+			<td valign="top">Ph.D. 2016</td>
+	    		<td valign="top">Physical Scientist,<br />US EPA OAQPS</td>
+		  	</tr>
+			<tr>
+		    	<td valign="top"><a name="Leibensperger"></a><a href="https://leibensperger.github.io/" target="_blank">LEIBENSPERGER, Eric M.</a></td>
+			<td valign="top">Ph.D. 2011</td>
+	    		<td valign="top">Associate Professor,<br />Ithaca College</td>
+		  	</tr>
+			<tr>
+		    	<td valign="top"><a name="Leriche"></a>LERICHE, Maud</a></td>
+			<td valign="top"> Postdoctoral Fellow,<br />2002</td>
+	    		<td valign="top">Chargee de Recherche<br />Laboratoire de Meteorologie<br />Physique CNRS,<br />Clermont-Ferrand, France.</td>
+		  	</tr>
+			<tr>
+		    	<td valign="top"><a name="LeSager"></a><a href="https://www.researchgate.net/profile/P_Sager" target="_blank">LE SAGER, Philippe</a></td>
+			<td valign="top">Research Associate,<br />2007-2009</td>
+	    		<td valign="top">Scientific Model Developer,<br />KNMI, Netherlands</td>
+		  	</tr>
+ 			<tr>
+		    	<td valign="top"><a name="Li"></a><a href="http://people.atmos.ucla.edu/qli/trop/Home.html" target="_blank">LI, Qinbin</a></td>
+			<td valign="top">Ph.D. 2003</td>
+	    		<td valign="top">Professor,<br />University of California at Los Angeles</td>
+		  	</tr>
+ 			<tr>
+		    	<td valign="top"><a name="Liy"></a><a href="https://scholar.harvard.edu/yli" target="_blank">LI, Yang</a></td>
+			<td valign="top">Postdoctoral Fellow,<br />2018-2020</td>
+	    		<td valign="top">Research Associate,<br />Harvard (Wofsy group)</td>
+		  	</tr>
+			<tr>
+		    	<td valign="top"><a name="Liang"></a>LIANG, Jinyou</a></td>
+			<td valign="top">Ph.D. 1997</td>
+	    		<td valign="top">Air Pollution Chemist,<br />Elk Grove, California</td>
+		  	</tr>
+			<tr>
+		    	<td valign="top"><a name="CLin"></a><a href="http://clinlawell.dyson.cornell.edu/" target="_blank">LIN LAWELL, C.-Y. Cynthia</a></td>
+			<td valign="top">Undergraduate Research<br />Assistant, 1998-2000</td>
+	    		<td valign="top">Professor,<br />Cornell University</td>
+		  	</tr>
+			<tr>
+		    	<td valign="top"><a name="JLin"></a><a href="https://www.researchgate.net/profile/Jintai_Lin" target="_blank">LIN, Jintai</a></td>
+			<td valign="top">Postdoctoral Fellow,<br />2008-2010</td>
+	    		<td valign="top">Professor,<br />Peking University</td>
+		  	</tr>
+			<tr>
+		    	<td valign="top"><a name="HLiu"></a><a href="https://airbornescience.nasa.gov/person/Hongyu_Liu" target="_blank">LIU, Hongyu</a></td>
+			<td valign="top">Ph.D. 2002</td>
+	    		<td valign="top">Senior Research Scientist,<br />National Institute of Aerospace at<br />NASA Langley Research Center</td>
+		  	</tr>
+			<tr>
+		    	<td valign="top"><a name="JLiu"></a><a href="http://science.gsfc.nasa.gov/sed/bio/junhua.liu" target="_blank">LIU, Junhua</a></td>
+			<td valign="top">Postdoctoral Fellow and<br />Research Associate,<br />2008-2013</td>
+	    		<td valign="top">Scientist,<br />NASA/Goddard Space Flight Center</td>
+		  	</tr>
+			<tr>
+		    	<td valign="top"><a name="PLiu"></a><a href="http://liu.eas.gatech.edu/" target="_blank">LIU, Pengfei</a></td>
+			<td valign="top">Postdoctoral Fellow,<br />2018-2020</td>
+	    		<td valign="top">Assistant Professor,<br />Georgia Tech</td>
+		  	</tr>
+			<tr>
+		    	<td valign="top"><a name="Logan"></a><a href="http://www.people.fas.harvard.edu/~logan/" target="_blank">LOGAN, Jennifer A.</a></td>
+			<td valign="top">Senior Research Fellow,<br />1975-2013</td>
+	    		<td valign="top">Retired</td>
+		  	</tr>
+			<tr>
+		    	<td valign="top"><a name="Long"></a>LONG, Michael S.</a></td>
+			<td valign="top">Postdoctoral Fellow and Research Associate,<br />2012-2018</td>
+	    		<td valign="top">Farmer, Wilmington, North Carolina</td>
+		  	</tr>
+			<tr>
+		    	<td valign="top"><a name="Maasakkers"></a><a href="https://jdmaasakkers.github.io/" target="_blank">MAASAKKERS, J.D. (Bram)</a></td>
+			<td valign="top">Ph.D. 2018</td>
+	    		<td valign="top">Postdoctoral Fellow,<br />SRON</td>
+		  	</tr>
+			<tr>
+		    	<td valign="top"><a name="Mahieu"></a><a href="http://www.ago.ulg.ac.be/Cnt/fiche_f.php?qLbl=Mahi01" target="_blank">MAHIEU, Emmanuel</a></td>
+			<td valign="top">Visiting Scientist,<br />2013</td>
+	    		<td valign="top">Research Scientist,<br />Universite de Liege, Belgium</td>
+		  	</tr>
+			<tr>
+		    	<td valign="top"><a name="Mao"></a><a href="https://www.uaf.edu/chem/faculty/mao/" target="_blank">MAO, Jingqiu</a></td>
+			<td valign="top">Postdoctoral Fellow,<br />2008-2010</td>
+	    		<td valign="top">Assistant Professor,<br />University of Alaska Fairbanks</td>
+		  	</tr>
+			<tr>
+		    	<td valign="top"><a name="Marais"></a><a href="http://maraisresearchgroup.co.uk/" target="_blank">MARAIS, Eloise</a></td>
+			<td valign="top">Ph.D. 2014 and Postdoctoral Fellow,<br />2014-2016</td>
+	    		<td valign="top">Associate Professor in Physical Geography<br />University College London</td>
+		  	</tr>
+			<tr>
+		    	<td valign="top"><a name="Mari"></a><a href="https://www.researchgate.net/profile/Celine_Mari"</a>MARI, Celine</td>
+			<td valign="top">Postdoctoral Fellow,<br />1998-1999</td>
+	    		<td valign="top">Director,<br />Laboratoire d'Aerologie CNRS,<br />Toulouse, France</td>
+		  	</tr>
+			<tr>
+		    	<td valign="top"><a name="Martin"></a><a href="https://engineering.wustl.edu/Profiles/Pages/Randall-Martin.aspx" target="_blank">MARTIN, Randall V.</a></td>
+			<td valign="top">Ph.D. 2002</td>
+	    		<td valign="top">Professor,<br />Department of Energy, Environmental and Chemical Engineering,<br />Washington University</td>
+		  	</tr>
+			<tr>
+		    	<td valign="top"><a name="Mauzerall"></a><a href="https://scholar.princeton.edu/mauzerall" target="_blank">MAUZERALL, Denise L.</a></td>
+			<td valign="top">Ph.D. 1996</td>
+	    		<td valign="top">Professor,<br />Department of Civil and Environmental Engineering and the Woodrow Wilson<br />School of Public and International Affairs,<br />Princeton University</td>
+		  	</tr>
+			<tr>
+		    	<td valign="top"><a name="Megretskia"></a>MEGRETSKAIA, Inna A.</td>
+			<td valign="top">Scientific Programmer,<br />1996-2012</td>
+	    		<td valign="top">Retired</td>
+		  	</tr>
+			<tr>
+		    	<td valign="top"><a name="Millet"></a><a href="http://www.atmoschem.umn.edu/people" target="_blank">MILLET, Dylan B.</a></td>
+			<td valign="top">Postdoctoral Fellow,<br />2005-2007</td>
+	    		<td valign="top">Professor,<br />University of Minnesota</td>
+		  	</tr>
+ 			<tr>
+		    	<td valign="top"><a name="Murray"></a><a href="http://www.sas.rochester.edu/ees/atmos/" target="_blank">MURRAY, Lee T.</a></td>
+			<td valign="top" >Ph.D. 2013</td>
+	    		<td valign="top">Assistant  Professor,<br />University of Rochester</td>
+		  	</tr>
+			<tr>
+		    	<td valign="top"><a name="Murti"></a><a href="https://www.linkedin.com/in/prashantmurti/">MURTI, Prashant</a></td>
+			<td valign="top">Scientific Programmer,<br />1996-1999</td>
+	    		<td valign="top">DB Energy Trader,<br />Citi, Houston, Texas</td>
+		  	</tr>
+			<tr>
+		    	<td valign="top"><a name="Nassar"></a><a href="https://profils-profiles.science.gc.ca/en/profile/ray-nassar" target="_top">NASSAR, Ray</a></td>
+			<td valign="top">Postdoctoral Fellow,<br />2006-2008</td>
+	    		<td valign="top">Research Scientist (Greenhouse Gases),<br />Climate Research Division,<br />Environment Canada</td>
+		  	</tr>
+			<tr>
+		    	<td valign="top"><a name="Palmer"></a><a href="http://www.palmergroup.org/paul-palmer" target="_blank">PALMER, Paul I.</a></td>
+			<td valign="top">Postdoctoral Fellow and<br />Research Associate,<br />1999-2005</td>
+	    		<td valign="top">Professor,<br />University of Edinburgh</td>
+		  	</tr>
+			<tr>
+		    	<td valign="top"><a name="Park"></a><a href="http://airchem.snu.ac.kr/rjpark/" target="_blank">PARK, Rokjin J.</a></td>
+			<td valign="top">Postdoctoral Fellow and<br />Research Associate,<br />2001-2007</td>
+	    		<td valign="top">Associate Professor,<br />School of Earth and Environmental Sciences,<br />Seoul National University</td>
+		  	</tr>
+			<tr>
+		    	<td valign="top"><a name="Parrella"></a><a href="https://www.linkedin.com/in/justinparrella/">PARRELLA, Justin</a></td>
+			<td valign="top">Ph.D. 2012</td>
+	    		<td valign="top">Analytics Manager,<br />Instagram, New York</td>
+		  	</tr>
+			<tr>
+		    	<td valign="top"><a name="Paulot"></a><a href="http://scholar.princeton.edu/fpaulot" target="_blank">PAULOT, Fabien</a></td>
+			<td valign="top">Postdoctoral Fellow,<br />2011-2014</td>
+	    		<td valign="top">Associate Research Scholar,<br />Princeton University</td>
+		  	</tr>
+			<tr>
+		    	<td valign="top"><a name="Pickett-Heaps"></a>PICKETT-HEAPS, Christopher</td>
+			<td valign="top">Postdoctoral Fellow,<br />2008-2010</td>
+	    		<td valign="top">Research scientist,<br />CSIRO, Canberra</td>
+		  	</tr>
+			<tr>
+		    	<td valign="top"><a name="Poisson"></a><a href="http://www.ademe.fr/" target="_blank">POISSON, Nathalie</a></td>
+			<td valign="top">Postdoctoral Fellow,<br />1998-1999</td>
+	    		<td valign="top">Scientist,<br />Agence de l'Environnement et<br />de la Maitrise de l'Energie, France</td>
+		  	</tr>
+			<tr>
+		    	<td valign="top"><a name="Qureshi"></a><a href="http://www.iith.ac.in/~asif/" target="_blank">QURESHI, Asif</a></td>
+			<td valign="top">Postdoctoral Fellow,<br />2011-2013</td>
+	    		<td valign="top">Assistant Professor,<br />IIT Hyderabad, India</td>
+		  	</tr>
+			<tr>
+		    	<td valign="top"><a name="Rastigejev"></a><a href="https://www.ncat.edu/employee-bio.php?directoryID=587285080">RASTIGEJEV, Yevgenii</a></td>
+			<td valign="top">Postdoctoral Fellow,<br />2005-2007</td>
+	    		<td valign="top">Professor,<br />North Carolina A&T University</td>
+		  	</tr>
+			<tr>
+		    	<td valign="top"><a name="Ravetta"></a><a href="https://www.latmos.ipsl.fr/index.php/fr/43-pages-perso-officielles/3797-Francois-Ravetta-ici-latmos-ipsl-fr">RAVETTA, Francois</a></td>
+			<td valign="top">Postdoctoral Fellow,<br />1999-2000</td>
+	    		<td valign="top">Research Scientist,<br />IPSL, Paris</td>
+		  	</tr>
+			<tr>
+		    	<td valign="top"><a name="Riedel"></a><a href="http://www.sciencelearn.org.nz/contexts/icy_ecosystems/people/dr_katja_riedel" target="_blank">RIEDEL, Katja</a></td>
+			<td valign="top">Visiting Graduate Student,<br />2000</td>
+	    		<td valign="top">Expedition Leader,<br />National Institute of Water and <br />Atmospheric Research Ltd.,<br />Wellington, New Zealand</td>
+		  	</tr>
+			<tr>
+		    	<td valign="top"><a name="Santillana"></a><a href="http://www.people.fas.harvard.edu/~msantill/Mauricio_Santillana/Mauricio_Santillana.html" target="_blank">SANTILLANA, Mauricio</a></td>
+			<td valign="top">Postdoctoral Fellow,<br />2008-2011</td>
+	    		<td valign="top">Assistant Professor,<br />Harvard Medical School</td>
+		  	</tr>
+			<tr>
+		    	<td valign="top"><a name="Saunois"></a><a href="http://www.lsce.ipsl.fr/Pisp/marielle.saunois/" target="_blank">SAUNOIS, Marielle</a></td>
+			<td valign="top">Visiting Graduate Student,<br />2008</td>
+	    		<td valign="top">Maitre de Conferences,<br />Universite de Versailles Saint Quentin</td>
+		  	</tr>
+			<tr>
+		    	<td valign="top"><a name="Schmidt"></a><a href="http://www.airlabs.com/">SCHMIDT, Johan A.</a></td>
+			<td valign="top">Postdoctoral Fellow,<br />2013-2015</td>
+	    		<td valign="top">Project Manager,<br />Airlabs, Copenhagen</td>
+		  	</tr>
+			<tr>
+		    	<td valign="top"><a name="Schultz"></a><a href="https://www.fz-juelich.de/SharedDocs/Personen/IAS/JSC/EN/staff/schultz_m.htm" target="_blank">SCHULTZ, Martin G.</a></td>
+			<td valign="top">Postdoctoral Fellow,<br />1997-1999</td>
+	    		<td valign="top">Group Leader,<br />Forschungzentrum Julich, Germany</td>
+		  	</tr>
+			<tr>
+		    	<td valign="top"><a name="Selin"></a><a href="https://eapsweb.mit.edu/people/selin" target="_blank">SELIN, Noelle Eckley </a></td>
+			<td valign="top">Ph.D. 2007</td>
+	    		<td valign="top">Associate Professor,<br />Massachusetts Institute of Technology</td>
+		  	</tr>
+			<tr>
+		    	<td valign="top"><a name="Sheng"></a><a href="https://cgcs.mit.edu/people/sheng-jianxiong">SHENG, Jian-Xiong</a></td>
+			<td valign="top">Postdoctoral Fellow<br />2015-2018</td>
+	    		<td valign="top">Research Associate,<br />MIT<br /></td>
+		  	</tr>
+			<tr>
+		    	<td valign="top"><a name="Silvern"></a><a href="https://www.nationalacademies.org/basc/about" target="_blank">SILVERN, Rachel F.</a></td>
+			<td valign="top">Ph.D. 2019</td>
+	    		<td valign="top">BASC Associate Program Officer,<br />National Academy of Sciences</td>
+		  	</tr>
+			<tr>
+		    	<td valign="top"><a name="Smith-Downey"></a><a href="http://www.earthsystemsciences.com/" target="_blank">SMITH-DOWNEY, Nicole S.</a></td>
+			<td valign="top">Postdoctoral Fellow<br />2006-2008</td>
+	    		<td valign="top">Principal,<br />Earth System Sciences, LLC,<br />Austin, TX</td>
+		  	</tr>
+			<tr>
+			<td valign="top"><a name="Soerensen"></a><a href="http://www.aces.su.se/staff/" target="_blank">SOERENSEN, Anne L.</a></td>
+			<td valign="top">Postdoctoral Fellow,<br />2011-2014</td>
+			<td valign="top">Researcher,<br />Stockholm University, Sweden</td>
+		        </tr>
+			<tr>
+		    	<td valign="top"><a name="Spiro"></a>SPIRO, Peter A.</td>
+			<td valign="top">Scientific Programmer,<br />1989-1991</td>
+	    		<td valign="top">Senior software engineer,<br />Ask.com, Oakland, California</td>
+		  	</tr>
+			<tr>
+		    	<td valign="top"><a name="Spracklen"></a><a href="https://environment.leeds.ac.uk/see/staff/1548/professor-dominick-spracklen" target="_blank">SPRACKLEN, Dominick</a></td>
+			<td valign="top">Postdoctoral Fellow,<br />2005-2006</td>
+	    		<td valign="top">Professor,<br />University of Leeds, UK</td>
+		  	</tr>
+			<tr>
+		    	<td valign="top"><a name="Staudt"></a><a href="https://thebreakthrough.org/people/amanda-staudt" target="_blank">STAUDT, Amanda C. </a></td>
+			<td valign="top">Ph.D. 2001</td>
+	    		<td valign="top">BASC Director,<br />National Academy of Sciences</td>
+		  	</tr>
+			<tr>
+		    	<td valign="top"><a name="Sunderland"></a><a href="http://www.people.fas.harvard.edu/~esunderl/ems/Home.html">SUNDERLAND, Elsie</a></td>
+			<td valign="top">Research Associate<br />2008-2011</td>
+	    		<td valign="top">Professor, Harvard</td>
+		  	</tr>
+ 			<tr>
+		    	<td valign="top"><a name="Suntharalingam"></a><a href="https://people.uea.ac.uk/p_suntharalingam" target="_blank">SUNTHARALINGAM, Parvadha N.</a></td>
+			<td valign="top">Research Associate,<br />2003-2009</td>
+	    		<td valign="top">Reader,<br />University of East Anglia, UK</td>
+		  	</tr>
+			<tr>
+		    	<td valign="top"><a name="Tai"></a><a href="http://www.cuhk.edu.hk/sci/essc/tgabi" target="_blank">TAI, Amos P. K.</a></td>
+			<td valign="top">Ph.D. 2012</td>
+	    		<td valign="top">Associate Professor,<br />Chinese University of Hong Kong</td>
+		  	</tr>
+			<tr>
+		    	<td valign="top"><a name="Tanimoto"></a><a href="https://www.nies.go.jp/researchers-e/100116.html" target="_blank">TANIMOTO, Hiroshi</a></td>
+			<td valign="top">Visiting scientist<br />2007-2008</td>
+	    		<td valign="top"> Group Leader,<br />National Institute for Environmental Studies,<br />Japan</td>
+		  	</tr>
+			<tr>
+		    	<td valign="top"><a name="Thouret"></a><a href="http://www.aero.obs-mip.fr/presentation/Annuaire-LA" target="_blank">THOURET, Valerie</a></td>
+			<td valign="top">Postdoctoral Fellow,<br />1998-1999</td>
+	    		<td valign="top">Physicien Adjoint a l'Observatoire <br />Midi-Pyrenees a Toulouse, France</td>
+		  	</tr>
+			<tr>
+		    	<td valign="top"><a name="Travis"></a><a href="https://science.larc.nasa.gov/NPP/people.html">TRAVIS, Katherine R.</a></td>
+			<td valign="top">Ph.D. 2017</td>
+			<td valign="top">Research Scientist,<br />NASA Langley Research Center</td>
+		  	</tr>
+			<tr>
+		    	<td valign="top"><a name="Turner"></a><a href="https://alexjturner.github.io/" target="_blank">TURNER, Alexander J.</a></td>
+			<td valign="top">Ph.D. 2017</td>
+	    		<td valign="top">Assistant Professor,<br />University of Washington</td>
+		  	</tr>
+			<tr>
+		    	<td valign="top"><a name="Turquety"></a><a href="http://www.lmd.polytechnique.fr/~sturquet/" target="_blank">TURQUETY, Solene</a></td>
+			<td valign="top">Postdoctoral Fellow,<br />2004-2005</td>
+	    		<td valign="top">Maitre de Conferences,<br />Universite de Paris VI</td>
+		  	</tr>
+			<tr>
+		    	<td valign="top"><a name="Unger"></a><a href="http://emps.exeter.ac.uk/mathematics/staff/nu212" target="_blank">UNGER, Nadine Bell</a></td>
+			<td valign="top">Postdoctoral Fellow,<br />2000-2001</td>
+	    		<td valign="top">Professor,<br />University of Exeter</td>
+		  	</tr>
+			<tr>
+		    	<td valign="top"><a name="ValMartin"></a><a href="https://mariavalmartin.wordpress.com/">VAL MARTIN, Maria</a></td>
+			<td valign="top">Postdoctoral Fellow,<br />2007-2009</td>
+	    		<td valign="top">Research Fellow,<br />University of Sheffield</td>
+		  	</tr>
+			<tr>
+		    	<td valign="top"><a name="FWang"></a><a href="http://home.cc.umanitoba.ca/~wangf/" target="_blank">WANG, Feiyue</a></td>
+			<td valign="top">Visiting scientist,<br />2010</td>
+	    		<td valign="top">Professor,<br />University of Manitoba</td>
+		  	</tr>
+			<tr>
+		    	<td valign="top"><a name="HWang"></a><a href="https://www.cfa.harvard.edu/~hwang/" target="_blank">WANG, Huiqun</a></td>
+			<td valign="top">Research Associate,<br />2006-2013</td>
+	    		<td valign="top">Scientist, <br />Harvard-Smithsonian Center for Astrophysics</td>
+		  	</tr>
+			<tr>
+		    	<td valign="top"><a name="JunWang"></a><a href="https://www.engineering.uiowa.edu/faculty-staff/jun-wang" target="_blank">WANG, Jun</a></td>
+			<td valign="top">Postdoctoral Fellow,<br />2005-2007</td>
+	    		<td valign="top">Professor,<br />University of Iowa</td>
+		  	</tr>
+			<tr>
+		    	<td valign="top"><a name="QWang">WANG, Qiaoqiao</a></td>
+			<td valign="top">Ph.D. 2013</td>
+	    		<td valign="top">Assistant Professor<br />Jinan University</td>
+		  	</tr>
+			<tr>
+		    	<td valign="top"><a name="XWang"></a><a href="https://www.cityu.edu.hk/see/people/dr-xuan-wang" target="_blank">WANG, Xuan</a></td>
+			<td valign="top">Postdoctoral Fellow,<br />2017-2019</td>
+	    		<td valign="top">Assistant Professor,<br />City University of Hong Kong</td>
+		  	</tr>
+			<tr>
+		    	<td valign="top"><a name="YuhangWang"></a><a href="http://apollo.eas.gatech.edu/">WANG, Yuhang</a></td>
+			<td valign="top">Ph.D. 1997</td>
+	    		<td valign="top">Professor,<br />School of Earth and Atmospheric Sciences,<br />Georgia Tech</td>
+		  	</tr>
+			<tr>
+		    	<td valign="top"><a name="YuxuanWang"></a><a href="http://www.eas.uh.edu/people/faculty/yuxuan-wang/" target="_blank">WANG, Yuxuan</a></td>
+			<td valign="top">Ph.D. 2005,<br />Postdoctoral Fellow and<br />Research Associate,<br />2005-2008</td>
+	    		<td valign="top">Associate Professor,<br />University of Houston</td>
+		  	</tr>
+			<tr>
+		    	<td valign="top"><a name="Wecht"></a><a href="https://www.linkedin.com/in/kevinwecht/" target="_blank">WECHT, Kevin</a></td>
+			<td valign="top">Ph.D. 2013</td>	    		
+                        <td valign="top">Data Scientist,<br /> GoGuardian, Los Angeles</td>
+		  	</tr>
+			<tr>
+		    	<td valign="top"><a name="Wu"></a><a href="http://www.geo.mtu.edu/geoschem/swu.html" target="_blank">WU, Shiliang</a></td>
+			<td valign="top">Ph.D. 2007</td>	    		
+                        <td valign="top">Associate Professor,<br />Michigan Tech</td>
+		  	</tr>
+			<tr>
+		    	<td valign="top"><a name="Xiao"></a>XIAO, Yaping</a></td>
+			<td valign="top">Ph.D. 2007</td>
+	    		<td valign="top">Senior Software Engineer,<br />Broadridge, Boston, MA</td>
+		  	</tr>
+			<tr>
+		    	<td valign="top"><a name="Yatteau"></a>YATTEAU, Jack H.</td>
+			<td valign="top">System Manager,<br />1990-2015</td>
+	    		<td valign="top">Retired</td>
+		  	</tr>
+			<tr>
+		    	<td valign="top"><a name="Yevich"></a>YEVICH, Rose M.</td>
+			<td valign="top">Scientific Programmer,<br />1980-2008</td>
+	    		<td valign="top">Retired</td>
+		  	</tr>
+			<tr>
+		    	<td valign="top"><a name="Yu"></a><a href="https://www.linkedin.com/in/karen-yu-16894534/" target="_blank">YU, Karen</a></td>
+			<td valign="top">Ph.D. 2017</td>
+	    		<td valign="top">Data Scientist,<br />Lyft, San Francisco</td>
+		  	</tr>
+			<tr>
+		    	<td valign="top"><a name="Yue"></a><a href="https://orcid.org/0000-0002-8861-8192" target="_blank">YUE, Xu</a></td>
+			<td valign="top">Postdoctoral Fellow,<br />2009-2012</td>
+	    		<td valign="top">Professor,<br />NUIST</td>
+		  	</tr>
+			<tr>
+		    	<td valign="top"><a name="LZhang"></a><a href="http://www.phy.pku.edu.cn/personnel/member/ZhangL.xml" target="_blank">ZHANG, Lin</a></td>
+			<td valign="top">Ph.D. 2009,<br />Postdoctoral Fellow and<br />Research Associate,<br />2009-2012</td>
+	    		<td valign="top">Professor,<br />Peking University</td>
+		  	</tr>
+			<tr>
+		    	<td valign="top"><a name="YZhang"></a><a href="http://as.nju.edu.cn/" target="_blank">ZHANG, Yanxu</a></td>
+			<td valign="top">Postdoctoral Fellow,<br />2013-2015</td>
+	    		<td valign="top">Professor,<br />Nanjing University</td>
+		  	</tr>
+                        <tr>
+			  <td valign="top"><a name="YuZhang"></a><a href="https://scholar.harvard.edu/yuzhongzhang" target="_blank">ZHANG, Yuzhong</a></td>
+			  <td valign="top">Postdoctoral Fellow,<br />2017-2019</td>
+			  <td valign="top">Assistant Professor,<br />Westlake University</td>
+			</tr>
+                        <tr>
+                          <td valign="top"><a name="Zhu"><a href="https://www.acmrsg.org/" target="_blank">ZHU, Lei</a></td>
+			  <td valign="top">Ph.D. 2016, <br />Postdoctoral Fellow,<br />2016-2019</td>
+	    		  <td valign="top">Assistant Professor,<br/>Southern University of Science and Technology (SUSTech)</td>
+		  	</tr>
+			<tr>
+		    	  <td valign="top"><a name="Zoogman"></a><a href="https://www.seas.harvard.edu/person/peter-zoogman" target="_blank">ZOOGMAN, Peter</a></td>
+			  <td valign="top">Ph.D. 2013</td>
+	    		  <td valign="top">Research Associate,<br />Harvard College Observatory</td>
+		  	</tr>
+          
+     	</table>
+      </div>
+         
+		<!-- 
+		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+		%%% END OF PAGE CONTAINER SECTION         %%%
+		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+		-->               
+			</div>
+			
+		<!-- 
+		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+		%%% RELATED SITES SECTION                 %%%
+		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+		-->          
+			<script>showRelatedSites();</script>
+
+		<!-- 
+		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+		%%% PAGE WRAPPER ENDS HERE                %%%
+		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+		-->           
+		</div>
+
+		<!-- 
+		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+		%%% FOOTER SECTION (LEAVE INTACT)         %%%
+		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+		-->  
+		<script>showFooter();</script> 
+
+	</body>
+</html>

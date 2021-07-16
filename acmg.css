@@ -1,0 +1,265 @@
+.green {
+  color           : #009900;
+}
+.orange{ 
+  color           : #ff6600;
+}
+.purple {
+  color           : #cc33cc;
+}
+.red {
+  color           : #FF0000;
+}
+.crimson {
+  color           : #990033;
+}
+.white {
+  color           : #FFFFFF;
+}
+.size12{
+  font-family     : Arial, Helvetica, sans-serif;
+  font-size       : 12px;
+}
+.size12b{
+  font-family     : Arial, Helvetica, sans-serif, bold;
+  font-size       : 12px;
+  font-weight     : bold;
+}
+.size12bi{
+  font-family     : Arial, Helvetica, sans-serif;
+  font-size       : 12px;
+  font-style      : italic;
+  font-weight     : bold;
+}
+.size12i{
+  font-family     : Arial, Helvetica, sans-serif;
+  font-size       : 12px;
+  font-style      : italic;
+}
+.size14,div.mp_backlinks{
+  font-family     : Arial, Helvetica, sans-serif;
+  font-size       : 14px;
+}
+.size14b{
+  font-family     : Arial, Helvetica, sans-serif, bold;
+  font-size       : 14px;
+  font-weight     : bold;
+}
+.size14bw{
+  font-family     : Arial, Helvetica, sans-serif, bold;
+  font-size       : 14px;
+  font-weight     : bold;
+  color           : #FFFFFF;
+}
+.size14bi{
+  font-family     : Arial, Helvetica, sans-serif;
+  font-size       : 14px;
+  font-style      : italic;
+  font-weight     : bold;
+}
+.size14i{
+  font-family     : Arial, Helvetica, sans-serif;
+  font-size       : 14px;
+  font-style      : italic;
+}
+.size16{
+  font-family     : Arial, Helvetica, sans-serif;
+  font-size       : 16px;
+}
+.size16b{
+  font-family     : Arial, Helvetica, sans-serif;
+  font-size       : 16px;
+  font-weight     : bold;
+}
+.size16bi{
+  font-family     : Arial, Helvetica, sans-serif;
+  font-size       : 16px;
+  font-style      : italic;
+  font-weight     : bold;
+}
+.size16i{
+  font-family     : Arial, Helvetica, sans-serif;
+  font-size       : 16px;
+  font-style      : italic;
+}
+.size18{
+  font-family     : Arial, Helvetica, sans-serif;
+  font-size       : 18px;
+}
+.size18b{
+  font-family     : Arial, Helvetica, sans-serif;
+  font-size       : 18px;
+  font-weight     : bold;
+}
+.size18bi{
+  font-family     : Arial, Helvetica, sans-serif;
+  font-size       : 18px;
+  font-style      : italic;
+  font-weight     : bold;
+}
+.size18i{
+  font-family     : Arial, Helvetica, sans-serif;
+  font-size       : 18px;
+  font-style      : italic;
+}
+.size20b{
+  font-family     : Arial, Helvetica, sans-serif;
+  font-size       : 20px;
+  font-weight     : bold;
+}
+.size20b_red{
+  font-family     : Arial, Helvetica, sans-serif;
+  font-size       : 20px;
+  font-weight     : bold;
+  color           : #FF0000;
+}
+.size20bi{
+  font-family     : Arial, Helvetica, sans-serif;
+  font-size       : 20px;
+  font-style      : italic;
+  font-weight     : bold;
+}
+.size24b{
+  font-family     : Arial, Helvetica, sans-serif;
+  font-size       : 24px;
+  font-weight     : bold;
+}
+.size24bi{
+  font-family     : Arial, Helvetica, sans-serif;
+  font-size       : 24px;
+  font-style      : italic;
+  font-weight     : bold;
+}
+.size28b{
+  font-family     : Arial, Helvetica, sans-serif;
+  font-size       : 28px;
+  font-weight     : bold;
+}
+.size28bi{
+  font-family     : Arial, Helvetica, sans-serif;
+  font-size       : 28px;
+  font-style      : italic;
+  font-weight     : bold;
+}
+.courier14{
+  font-family     : Courier New, Courier, mono;
+  font-size       : 14px;
+}
+.courier16,pre,tt{
+  font-family     : Courier New, Courier, mono;
+  font-size       : 16px;
+}
+.courier16_green{
+  font-family     : Courier New, Courier, mono;
+  font-size       : 16px;
+  color           : #009900;
+}
+.courier16_orange{
+  font-family     : Courier New, Courier, mono;
+  font-size       : 16px;
+  color           : #ff6600;
+}
+.courier16_purple{
+  font-family     : Courier New, Courier, mono;
+  font-size       : 16px;
+  color           : #cc33cc;
+}
+p,body,li,ol,td,th{
+  font-family     : Arial, Helvetica, sans-serif;
+  font-size       : 16px;
+}
+a{
+    text-decoration : none;
+}
+a:link{ 
+  color           : #0000FF;  /* blue */
+}
+a:visited{ 
+  color           : #0000FF;  /* blue */
+}
+ul.disc{ 
+  list-style-type : disc; 
+}
+ul.circle{ 
+  list-style-type : circle; 
+}
+#menu { 
+  position        : absolute;
+  top             : 0;
+  left            : 0px;
+  z-index         : 100;
+  width           : 800px;
+}
+#menu dl {
+  font            : Verdana, Arial, Helvetica, sans-serif;
+  font-weight     : normal;
+  float           : left;
+  width           : 98px;
+  margin          : 0px 1px 0px 1px;
+  padding         : 0;
+  list-style-type : none;	
+}
+#menu dt {
+  font            : Verdana, Arial, Helvetica, sans-serif;
+  font-weight     : bold;
+  font-size       : 14px;
+  margin          : 0;
+  padding         : 0;
+  list-style-type : none;
+  cursor          : pointer;
+  text-align      : center;
+  background      : #770000;
+  color           : #FFFFFF;
+  border          : 1px solid #770000;
+}
+#menu dd {
+  margin          : 0;
+  padding         : 0;
+  list-style-type : none;	
+  border          : 1px solid gray;
+  background      : white;
+}
+#menu li {
+  font            : Verdana, Arial, Helvetica, sans-serif;
+  font-weight     : normal;
+  font-size       : 12px;
+  margin          : 6px 1px 6px 1px;
+  padding         : 0;
+  list-style-type : none;	
+  text-align      : center;
+  background      : #FFFFFF;
+}
+#menu ul {
+  margin          : 0;
+  padding         : 0;
+  list-style-type : none;
+}
+#menu li a {
+  color           : #000000;
+  text-decoration : none;
+  display         : block;
+  height          : 100%;
+  border          : 0 none;
+}
+#menu dt a {
+  color           : #FFFFFF;
+  text-decoration : none;
+  display         : block;
+  height          : 100%;
+  border          : 0 none;
+}
+#menu li a:hover, #menu dt a:hover {
+  background      : #770000; 
+  color           : #FFFFFF;
+}
+#site {
+  position        : absolute;
+  z-index         : 1;
+  top             : 50px;
+  left            : 0px;
+  width           : 800px;
+  color           : #000000;
+}
+div.indent {
+  margin          :  0px 15px 0px 15px;
+}

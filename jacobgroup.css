@@ -1,0 +1,718 @@
+/*****************************************************************************
+ ***  jacobgroup.css: Style sheet for use with the Jacob-group site        ***
+ ***  Bob Yantosca, 25 Mar 2014                                            ***
+ ***                                                                       ***
+ ***  NOTES:                                                               ***
+ ***  (1) Where modifications were made, the original code was preserved.  ***
+ ***  (2) The "margin" settings are TOP RIGHT BOTTOM LEFT.                 ***
+ *****************************************************************************/
+
+/**************************************
+ *** GENERAL SETTINGS               ***
+ **************************************/
+
+html, body {
+	/***MODIFICATION: Use 101% to always force the slider bar.  
+	                  This avoids the width of the page from changing (bmy, 3/25/14) ***/
+    /***ORIGINAL CODE: height: 100%;***/
+	height: 101%;  
+}
+
+body {
+	margin: 0px;
+	padding: 0px;
+	background: #333 url(logos/overlay.png) repeat;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 12pt;
+	font-weight: 400;
+	color: rgba(0,0,0,.8);
+}
+
+h1, h2, h3 {
+	margin: 0;
+	padding: 0;
+
+	/***MODIFICATION: Don't convert H1, H2, H3 to uppercase (bmy, 3/25/14) ***/
+	/***ORIGINAL CODE: text-transform: uppercase;***/
+
+	font-weight: 300;
+	color: #2D2D2D;
+}
+
+h2 {
+	/***MODIFICATION: Reduce bottom-padding after H2 letterin (bmy, 3/26/14) ***/
+	/***ORIGINAL CODE: padding: 0px 0px 30px 0px;***/
+	padding: 0px 0px 5px 0px;
+	
+	/***MODIFICATION: Make H2 heading a little smaller (bmy, 3/25/15)***/
+	/***ORIGINAL CODE:font-size: 2.50em;***/
+	font-size: 2.0em;
+
+	/***MODIFICATION: Make H2 heading bolder (bmy, 3/25/14) ***/
+	font-weight: 500;
+}
+
+/***MODIFICATION: Make H3 lettering bolder and add a little bottom cushion (bmy, 3/31/14) ***/
+h3 {
+	font-size: 1.6em;
+	padding: 0px 0px 10px 0px;
+	font-weight: 400;
+}
+
+p, ol, ul {
+	margin-top: 0px;
+}
+
+p {
+	line-height: 120%;
+}
+
+p.topheader {
+	line-height: 120%;
+}
+
+strong {
+}
+
+a {
+    color: rgba(0,0,0,.8);
+	/***MODIFIATION: The derault text decoration for hyperlinks is underlining, unless specified otherwise (bmy, 3/25/14) ***/
+	/***ORIGINAL CODE:text-decoration: none;***/
+	text-decoration: underline;
+}
+
+a:hover {
+	/***MODIFICATION: Now underline hyperlinks when the mouse is placed over them (bmy, 3/25/14) ***/
+	/***ORIGINAL CODE: text-decoration: none;***/
+	text-decoration: underline;
+}
+
+a img {
+	border: none;
+}
+
+img.border {
+}
+
+img.alignleft {
+	float: left;
+}
+
+img.alignright {
+	float: right;
+}
+
+img.aligncenter {
+	margin: 0px auto;
+}
+
+
+hr {
+	/***MODIFICATION: Allow horizontal rules to be shown (bmy, 3/27/14) ***/
+	/***ORIGINAL CODE: display: none; ***/
+	
+	/***MODIFICATION: Add a little padding above and below the horizontal rule (bmy, 3/27/14) ***/
+	margin: 30px 0px 30px 0px;
+}
+
+/***MODIFICATiON: Add style for GREEN (bmy, 3/27/14) ***/
+.green {
+	color: #009900;
+}
+
+/***MODIFICATiON: Add style for RED (bmy, 3/27/14) ***/
+.red {
+	color: #FF0000;
+}
+
+/***MODIFICATiON: Add style for BLUE (bmy, 3/27/14) ***/
+.blue {
+	color: #0000FF;
+}
+
+/***MODIFICATiON: Add style for YELLOW (bmy, 3/27/14( ***/
+.yellow { 
+	color: #CCCC00;
+}
+
+/***MODIFICATiON: Add style for BLACK (bmy, 3/27/14) ***/
+.black {
+	color: #000000;
+}
+
+/***MODIFICATiON: Add style for SILVER (bmy, 4/1/14) ***/
+.silver {
+	color: #666666;
+}
+
+/**************************************
+ *** WRAPPER AND CONTAINER SECTIONS ***
+ **************************************/
+
+#wrapper {
+	/***MODIFICATION: Use 6-digit color values (bmy, 3/25/14) ***/
+	/***ORIGINAL CODE: background: #FFF;***/
+	background: #FFFFFF;
+	margin: 0px 20px;
+}
+
+.container {
+	/***MODIFICATION: Change page size from 1200px to 1000px (bmy, 3/25/14) ***/	
+	/***ORIGINAL CODE: width: 1200px;***/
+	width: 1000px;
+	margin: 0px auto;
+}
+
+.clearfix {
+	clear: both;
+}
+
+/**************************************
+ *** HEADER SECTION                 ***
+ **************************************/
+
+#header {
+	overflow: hidden;
+	
+	/***MODIFICATION: Change header height from 200px to 135px (bmy, 3/25/14) ***/	
+	/***ORIGINAL CODE: height: 200px;***/
+	height: 90px;
+}
+
+/**************************************
+ *** LOGO SECTION                   ***
+ **************************************/
+
+#logo {
+	/***MODIFICATION: Change logo height from 150px to 100px (bmy, 3/25/14) ***/	
+	/***ORIGINAL CODE: height: 150px;***/
+	height: 80px;
+	
+	/***MODIFICATION: Insert 15px of cushion space between the top of page 
+	                  and top of text.  This used to be 50px before. (bmy, 3/25/14) ***/	
+	/***ORIGINAL CODE:padding: 50px 0px 0px 0px;***/
+	padding: 20px 0px 0px 115px;
+}
+
+#logo h1, #logo p {
+	margin: 0;
+	padding: 0;
+}
+
+#logo h1 {
+    /***MODIFICATION: In the logo section, do not push H1 lettering closer together than normal (bmy, 3/25/14) ***/
+	/***ORIGINAL CODE: letter-spacing: -1px;***/
+
+    /***MODIFICATION: In the logo section, do not automatically transform H1 lettering to uppercase (bmy, 3/25/14)***/
+	/***ORIGINAL CODE: text-transform: lowercase;*/
+	
+    /***MODIFICATION: In the logo section, make H1 lettering a little smaller (bmy, 3/25/14)***/
+	/*ORIGINAL: font-size: 3.5em;*/
+	font-size: 1.6em;
+	
+    /***MODIFICATION: In the logo section, make H1 lettering thicker (bmy, 3/25/14) ***/	
+	font-weight: bold;
+}
+
+#logo p {
+	padding: 0px;
+	letter-spacing: 0.05em;
+
+    /***MODIFICATION: In the logo section, do not automatically transform paragraph text to uppercase (bmy, 3/25/14) ***/	
+	/*ORIGINAL: text-transform: uppercase;*/
+
+	font-size: 0.9em;
+
+	/*** MODIFICATION: In the logo section, do not reset paragraph text color (bmy, 3/25/14) ***/
+	/*color: rgba(0,0,0,.4);*/
+    /*color: rgba(0,0,0, 0.5);*/
+}
+
+#logo p a {
+	/***MODIFICATION: In the logo section, do not make the paragraph or link color a lighter shade of gray (bmy, 3/25/14) ***/
+	/****ORIGINAL CODE: color: rgba(0,0,0,.4);***/
+	/***ORIGINAL CODE:color: rgba(0,0,0,.5);***/
+}
+
+#logo a {
+	border: none;
+	background: none;
+	
+	/***MODIFICATION: In the logo section, hyperlinks are underlined by default (bmy, 3/25/14) ***/
+	/***ORIGINAL CODE: text-decoration: none;***/
+	text-decoration: underline;
+
+    /*** MODIFICATION: In the logo section, do not make the link color a lighter shade of gray (bmy, 3/25/14) ***/	
+	/***color: rgba(0,0,0,.8);***/
+}
+
+/***MODIFICATiON: In the logo section, underline hyperlinks upon mouseover (bmy, 3/25/14) ***/
+#logo a:hover{
+	text-decoration: underline;
+}
+
+/***MODIFICATiON: Add the Jacob group logo at the extreme right of the top bar (bmy, 3/25/14) ***/
+#jacob{
+    float: left;
+    width: 70px;
+    margin: 5px 0px 0px 0px;
+	text-align: left;
+}
+
+/***MODIFICATiON: Add the Harvard logo at the extreme right of the top bar (bmy, 3/25/14) ***/
+#harvard{
+    float: right;
+    width: 70px;
+    margin: 5px 0px 0px 0px;
+	text-align: left;
+}
+
+/***MODIFICATiON: Add a division for the Jacob-group mission statement under the nav menu bar (bmy, 3/25/14) ***/
+/***#mission{
+	text-transform: none;
+	align: justify;
+	margin: 15px 5px 20px 5px;
+} ***/
+
+/**************************************
+ *** MENU SECTION                   ***
+ **************************************/
+
+#menu {
+	overflow: hidden;
+	
+	/***MODIFICATION: Change color to Harvard crimson (bmy, 3/25/14) ***/
+	/***ORIGINAL CODE: background: #308576;***/
+	background: #990033;
+}
+
+#menu ul {
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px;
+	list-style: none;
+	line-height: normal;
+}
+
+#menu li {
+	display: inline-block;
+}
+
+#menu a {
+	display: block;
+
+    /***MODIFICATION: Reduce spacing on both sides of each nav menu bar entry (bmy, 3/25/14) ***/
+	/***ORIGINAL CODE: padding: 0px 40px 0px 40px;***/
+	padding: 0px 22px 0px 22px;
+	
+	/***MODIFICATiON: Reduce height of nav menu bar (bmy, 3/25/14) ***/
+	/***ORIGINAL CODE: line-height: 70px;***/
+	line-height: 30px;
+
+	text-decoration: none;
+
+	/***MODIFICATION: Do not automatically transform nav menu bar lettering to uppercase (bmy, 3/25/14) ***/
+	/***ORIGINAL CODE: text-transform: uppercase;***/
+
+	text-align: center;
+	
+	/***MODIFICATION: Reduce nav menu bar lettering to 15pt font (bmy, 3/25/14) ***/
+	/*ORIGINAL: font-size: 16px;*/
+	font-size: 15px;
+
+    /***MODIFICATION: Make nav menu bar lettering thicker (bmy, 3/25/14) ***/
+	/*ORIGINAL: font-weight: 200;*/
+    font-weight: bold;
+
+	/*** MODIFICATION: Change nav bar menu lettering color to pure white (bmy, 3/25/14) ***/
+	/*ORIGINAL: color: rgba(255,255,255,0.5);*/
+	color: #FFFFFF;
+	
+	border: none;
+}
+
+#menu a:hover, #menu .current_page_item a {
+	text-decoration: none;
+
+    /***MODIFICATiON: Change nav menu bar mouseover color to yellow (bmy, 3/25/14) ***/
+	/*ORIGINAL: color: rgba(255,255,255,0.8);*/
+	color: #FFFF00;
+}
+
+#menu .current_page_item a {
+}
+
+#menu .last {
+	border-right: none;
+}
+
+/**************************************
+ *** PAGE SECTION                   ***
+ **************************************/
+
+#page {
+	overflow: hidden;
+
+    /*** MODIFICATION: Reduce the gap between the bottom of the nav menu bar and the rest of the page (bmy, 3/25/14) ***/
+	/*ORIGINAL: padding: 5em 0em;*/
+	padding: 0.5em 0em;	  /*** THIS CONTROLS THE GAP BETWEEN THE MENU AND THE PAGE */
+}
+
+/**************************************
+ *** CONTENT PANE SECTIONS          ***
+ **************************************/
+
+#content {
+	float: left;
+	width: 600px;
+}
+
+/***MODIFICATION: Add new style for pages w/ 2 columns (bmy, 3/25/14) ***/
+#content_wide{
+	float: left;
+	width: 785px;
+}
+
+/**************************************
+ *** SIDEBAR SECTION #1             ***
+ **************************************/
+
+#sidebar1 {
+	float: left;
+
+    /***MODIFICATiON: Reduce width of sidebar, for consistency w/ 1000px page width (bmy, 3/25/14) ***/
+	/***ORIGINAL CODE: width: 250px;***/
+	width: 175px;
+	margin-right: 25px;
+	
+	/*** MODIFICATION: Add a little top padding, to better align w/ the title of the content pane (bmy, 3/26/14) ***/
+	padding: 8px 0px 0px 0px;
+}
+
+#sidebar1 #box1 {
+    /***MODIFICATION: Reduce gap at bottom of sidebar #1 (bmy, 3/25/14) ***/
+	/***ORIGINAL CODE: margin-bottom: 4em;***/
+	margin-bottom: 1em;
+}
+
+#sidebar1 h2,
+#sidebar2 h2
+{
+	font-size: 1.5em;
+	font-weight: 400;
+}
+
+/**************************************
+ *** SIDEBAR SECTION #2             ***
+ **************************************/
+
+#sidebar2 {
+	float: right;
+
+    /***MODIFICATiON: Reduce width of sidebar, for consistency w/ 1000px page width (bmy, 3/25/14) ***/	
+	/*ORIGINAL: width: 250px;*/
+	width: 175px;
+	
+	/*** MODIFICATION: Add a little top padding, to better align w/ the title of the content pane (bmy, 3/26/14) ***/
+	padding: 5px 0px 0px 0px;	
+}
+
+/**************************************
+ *** FOOTER SECTION                 ***
+ **************************************/
+
+#footer {
+	overflow: hidden;
+	
+	/***MODIFICATION: Reduce size of footer section (bmy, 3/28/14) ***/
+	/***ORIGINAL CODE:padding: 50px 0px 30px 0px;***/
+	padding: 30px 0px 15px 0px;*/
+}
+
+#footer p {
+	text-align: center;
+	color: rgba(255,255,255,0.2);
+}
+
+#footer a {
+	color: rgba(255,255,255,0.3);
+}
+
+/**************************************
+ *** LIST STYLE #1                  ***
+ **************************************/
+
+ul.style1 {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+
+ul.style1 li {
+	padding: 10px 0px 5px 0px;
+	border-top: 1px solid #E6E7DC;
+}
+
+ul.style1 .first {
+	padding-top: 0px;
+	border-top: none;
+}
+
+/***MODIFICATION: In list style #1, don't let links be underlined by default (bmy, 3/25/14) ***/
+ul.style1 a {
+	text-decoration: none;
+}
+
+/***MODIFICATION: In list style #1, undeline hyperlinks upon mouseover (bmy, 3/25/14) ***/
+ul.style1 a:hover {
+	text-decoration: underline;
+}
+
+/**************************************
+ *** LIST STYLE #2                  ***
+ **************************************/
+
+ul.style2 {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+
+ul.style2 li {
+	padding: 25px 0px 15px 0px;
+	border-top: 1px solid #E6E7DC;
+}
+
+ul.style2 .first {
+	padding-top: 0px;
+	border-top: none;
+}
+
+ul.style2 h3 {
+	padding: 0px 0px 10px 0px;
+	font-size: 1.10em;
+}
+
+ul.style2 h3 a {
+	color: #101010;
+}
+
+ul.style2 a {
+	text-decoration: none;
+}
+
+ul.style2 a:hover {
+	text-decoration: underline;
+}
+
+/**************************************
+ *** LIST STYLE #3                  ***
+ **************************************/
+
+ul.style3 {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+
+ul.style3 li {
+	padding: 20px 0px 20px 0px;
+	border-top: 1px solid #E6E7DC;
+}
+
+ul.style3 p {
+	margin: 0px;
+	padding: 0px;
+}
+
+ul.style3 img {
+	float: left;
+	margin-top: 3px;
+	margin-right: 20px;
+}
+
+ul.style3 .posted {
+	padding: 10px 0px 10px 0px;
+	font-size: 8pt;
+	color: #A2A2A2;
+}
+
+ul.style3 .first {
+	padding-top: 0px;
+	border-top: none;
+}
+
+.link-style {
+	display: inline-block;
+	margin-top: 20px;
+	padding: 7px 20px;
+	background: #0C73D4;
+	border-radius: 5px;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #FFFFFF;
+}
+
+/**************************************
+ *** PORTFOLIO SECTION              ***
+ *** (used for RELATED SITES)       ***
+ **************************************/
+
+#portfolio-wrapper{
+	overflow: hidden;
+	
+	/***MODIFICATION: Reduce cushion space around "RELATED SITES" section at page bottom (bmy, 3/25/14) ***/
+	/***ORIGINAL CODE: padding: 5em 0em; ***/
+	padding: 0.2em 0em;
+	
+	background: rgba(0,0,0,.02);
+	background-image: url(logos/overlay.png);
+	background-repeat: repeat;
+	border-top: 1px solid rgba(0,0,0,.05);
+}
+	
+#portfolio{
+}
+
+#portfolio .box{
+	text-align: center;
+	color: rgba(0,0,0,0.5);
+}
+	
+#portfolio h3{
+	display: block;
+
+	/***MODIFICATION: Put less space between hyperlinks and images ***/
+	/***ORIGINAL CODE: padding-bottom: 1em;***/
+	padding-bottom: 0.8em;
+
+	text-transform: uppercase;
+
+	/***MODIFICATION: Make Portfolio H3 lettering a little smaller (bmy, 3/28/14) ***/
+	/***ORIGINAL CODE: font-size: 1.2em;***/
+	font-size: 0.9em;
+
+	/***MODIFICATION: Make H3 text a little darker (bmy, 3/28/14) ***/
+	/***ORIGINAL CODE: font-weight: 400;***/
+	font-weight: 500;
+
+	color: rgba(0,0,0,0.7);
+	
+}
+
+#portfolio .title{
+	text-align: center;
+}
+
+#portfolio .title h2{
+	color: rgba(0,0,0,0.8);
+	
+	/*** MODIFICATION: Make H2 title lettering a little smaller than default (bmy, 3/28/14) ***/
+	font-size: 1.6em;
+
+	/*** MODIFICATION: Don't leave any padding for the H2 title lettering (bmy, 3/28/14) ***/
+	margin: 5px 0px 0px 0px;
+}
+	
+#portfolio .title .byline{
+	display: block;
+	padding-bottom: 0em;
+	color: rgba(0,0,0,0.7);
+}
+
+.column1,
+.column2,
+.column3,
+.column4{
+    /***MODIFICATION: Reduce "RELATED SITES" column width to fit 1000px page width (bmy, 3/25/14) ***/
+	/***ORIGINAL: width: 282px;***/
+	width: 232px;
+}
+	
+.column1,
+.column2,
+.column3{
+	float: left;
+	margin-right: 24px;
+}
+	
+.column4{
+	float: right;
+}
+
+/**************************************
+ *** HEADING TITLES                 ***
+ **************************************/
+.title{
+	/***MODIFICATION: Reduce spacing between Portfolio title and hyperlinks (bmy, 3/28/14) ***/
+	/***ORIGINAL CODE:margin-bottom: 3em;***/
+	margin-bottom: 1.2em;
+}
+	
+.title h2{
+	margin: 0;
+	padding: 0;
+	font-size: 2.8em;
+	color: rgba(255,255,255,0.9);
+}
+	
+.title .byline{
+	padding-top: 0.50em;
+	letter-spacing: 0.15em;
+	text-transform: uppercase;
+	font-weight: 400;
+	font-size: 1.1em;
+	color: #6F6F6F;
+}
+
+/**************************************
+ *** BUTTON STYLE                   ***
+/**************************************/
+
+.button{
+	display: inline-block;
+	margin-top: 2em;
+	padding: 0em 1em;
+	
+	/***MODIFICATION: Change color to Harvard crimson (bmy, 3/25/14) ***/
+	/***ORIGINAL CODE: background: #308576;***/
+	background: #990033;
+	
+	letter-spacing: 0.10em;
+	line-height: 3em;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 400;
+	font-size: 1em;
+	color: #FFF;
+}
+
+/**************************************
+ *** IMAGE GALLERY SETTINGS         ***
+ **************************************/
+
+/*** MODIFICATION: Add a new header (250px high) for the pictures of the month pages (bmy, 3/26/14) ***/
+#gallery_header {
+	overflow:auto
+	height: 215px;
+	vertical-align: middle;
+}
+
+/*** MODIFICATION: Add link style for rotating image gallery pages (bmy, 3/26/14) ***/
+#gallery_a {
+	text-decoration: none;
+	color: #0000FF;
+}
+
+/***MODIFICATION: Make the H2 lettering in the image gallery much smaller than default (bmy, 3/26/14) ***/
+#gallery_h2{
+	font-size: 1.7em;
+}
+
+/**************************************
+ *** ALUMNI MAP SETTINGS            ***
+ **************************************/
+ 
+ #mapid { 
+    height: 180px;
+    margin: auto;
+}
