@@ -16,7 +16,7 @@ function showTopHeader() {
 \
         	<!-- This adds the group logo at left top of page -->\
          	<div id="jacob">\
-          		<a href="http://acmg.seas.harvard.edu/"><img src="logos/logo_medium.jpg" width="90" height="80" border=0></a>\
+          		<a href="https://projects.iq.harvard.edu/acmg"><img src="logos/logo_medium.jpg" width="90" height="80" border=0></a>\
 	         </div>\
 \
         	<!-- This adds the Harvard logo at left top of page -->\
